@@ -1,0 +1,33 @@
+# Informe comparativo de almacenamiento: HDD, SSD, Cinta y Nube
+
+## Propósito
+App educativa en Streamlit para comparar tecnologías de almacenamiento (HDD, SSD, Cinta, Nube) con foco en coste, rendimiento, escalabilidad y riesgos. Incluye:
+- Tabla comparativa con criterios técnicos y de negocio.
+- Especificación de gráficos con matplotlib (un gráfico por figura, sin fijar colores).
+- Simulación simple de tiempos estimados por tecnología.
+- Arquitectura híbrida recomendada, riesgos y próximos pasos.
+
+## Qué contiene la app
+- **Informe** con secciones: Escenario, Criterios, Comparación, Gráficos (especificación), Simulación, Arquitectura, Riesgos, Conclusiones y Referencias (APA7).
+- **Parámetros editables** para la simulación: volumen inicial, crecimiento anual, horizonte.
+- **Trazabilidad**: los supuestos sin fuente se etiquetan como [Inference]/[Unverified] con la frase “I cannot verify this”.
+
+## Cómo desplegar (Streamlit Community Cloud)
+1. Haz un fork o crea tu propio repo con estos archivos.
+2. Entra a https://streamlit.io/cloud → **New app**.
+3. Selecciona el repositorio y branch; archivo principal: `app.py`.
+4. Pulsa **Deploy**. Si falta una librería, añade en `requirements.txt`.
+
+## Estructura de archivos
+- `app.py`: app Streamlit (secciones, tablas, especificación de gráficos, simulación).
+- `requirements.txt`: librerías mínimas.
+- `data/valores_comparacion.csv` (opcional): datos de la tabla comparativa.
+- `README.md`: esta guía.
+
+## Notas de uso y supuestos
+- Gráficos con **matplotlib**, **una figura por gráfico**, **sin colores asignados manualmente**.
+- Los valores “de referencia” no citados se marcan como **[Inference]/[Unverified]**. Usa la frase “I cannot verify this” cuando no tengas fuente.
+- No hay instalación local ni CLI: todo desde navegador (GitHub + Streamlit Cloud).
+
+## Licencia
+Elige una licencia educativa (por ejemplo, MIT o CC BY 4.0) según tus necesidades.
