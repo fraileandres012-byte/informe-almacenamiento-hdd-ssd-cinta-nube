@@ -1,0 +1,1 @@
+# informe-almacenamiento-hdd-ssd-cinta-nube
